@@ -7,12 +7,12 @@ The GitHub Stargazer Client is a Command Line Interface (CLI) that interacts wit
 Get started by cloning the repo:  
 `$ git clone https://github.com/mattcullenmeyer/github-stargazer-client.git`  
 
-Navigate to the root directory of the project and enter the following command:  
-`$ go mod init github.com/mattcullenmeyer/github-stargazer-client`
+Once cloned, navigate to the root directory of the project:
+`$ cd github-stargazer-client`
 
 ### Running the Client
 
-Once cloned, navigate to the root directory of the project. The CLI is executed by entering `go run main.go` followed by an indefinite number of `<organization>/<repository>` string arguments.   
+The CLI is executed by entering `go run main.go` followed by an indefinite number of `<organization>/<repository>` string arguments.   
 
 For example, to return the number of stars that `https://github.com/mattcullenmeyer/github-stargazer-client` has received, enter:  
 `$ go run main.go mattcullenmeyer/github-stargazer-client`  
