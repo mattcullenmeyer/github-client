@@ -2,8 +2,13 @@
 
 The GitHub Stargazer Client is a Command Line Interface (CLI) that interacts with the GitHub Stargazer Server, which returns how man stars a given GitHub repository has received.  
 
+### Getting Started
+
 Get started by cloning the repo:  
 `$ git clone https://github.com/mattcullenmeyer/github-stargazer-client.git`  
+
+Navigate to the root directory of the project and enter the following command:  
+`$ go mod init github.com/mattcullenmeyer/github-stargazer-client`
 
 ### Running the Client
 

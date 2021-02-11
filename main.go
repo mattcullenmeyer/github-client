@@ -14,6 +14,7 @@ import (
 
 func getRepos(repos []string) string {
 
+	// Initialize response as blank string
 	response := ""
 
 	// Loop through each command line argument
