@@ -15,19 +15,19 @@ type github struct {
 	Message    string `json:"message"`
 }
 
-// Function to get data from stargazer server
-func GetData(repo string) string {
+// GetData is a function to get data from stargazer server
+func GetData(repo string, url string) string {
 
 	// Check to make sure API server is running
-	res, err := http.Get("http://localhost:8080/api")
+	res, err := http.Get(url)
 	if err != nil {
 		// Print that connection could not be made if API server is down
 		log.Fatal(err)
 	}
 
-	url := fmt.Sprintf("http://localhost:8080/api?repo=%s", repo)
+	urlRequest := fmt.Sprintf("%s/api?repo=%s", url, repo)
 
-	res, err = http.Get(url)
+	res, err = http.Get(urlRequest)
 	if err != nil {
 		log.Fatal(err)
 	}
